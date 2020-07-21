@@ -34,9 +34,6 @@ body{
     display: inline-block;
     margin-left: 70px;
     font-size: 18px;
-    
-    
-    
 }
 .navbar a{
     text-decoration: none;
@@ -119,7 +116,7 @@ body{
 }
 .login-form{
     width: 22%;
-    height: 450px;
+    height: 480px;
     margin-left: 0px;
     float: left;
     background-color: #5488a6;
@@ -128,28 +125,44 @@ body{
     margin-top: 25px;
     font-family: 'Grenze Gotisch', cursive;
     border-radius: 8px;
+    border-top-left-radius: 100px;
+    border-bottom-right-radius: 100px;
 }
 .login-form h1,p{
     text-align: center;
 }
 .login-form h1{
     font-size: 45px;
+    padding-top: 20px;
 }
 .login-form label{
     margin-left: 30px;
-    font-size: 35px;
+    font-size: 25px;
     
 }
-.login-form input{
-    background-color: #e0e17e;
+.login-form input[type="email"],.login-form input[type="password"]{
+    display: block;
+    margin: 0px auto;
+    padding: 10px 10px;
     width: 80%;
-    height: 45px;
-    margin-top: 0px;
-    margin-left: 30px;
-    border-radius: 5px;
-    border: none;
+    background: none;
+    border: 2px solid black;
+    border-radius: 15px;
+    transition: 0.8s;
 }
+
+.login-form input[type="email"]:hover,.login-form input[type="password"]:hover{
+    border-left: 30px black solid;
+}
+.login-form input[value]{
+    font-family: sans-serif;
+    font-size: 17px;
+}
+
+
 #btn{
+    margin-top: 30px;
+    margin-left: 30px;
     background-color: #1fd871;
     color: white;
     font-size: 20px;
